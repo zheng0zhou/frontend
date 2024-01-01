@@ -130,6 +130,133 @@
     <!-- 图像 -->
 
     <!-- 表格 -->
+    <table border="1">
+        <!-- 标题 -->
+        <thead> 
+            <tr>
+              <th>列标题1</th>
+              <th>列标题2</th>
+              <th>列标题3</th>
+            </tr>
+        </thead>
+        <!-- 表格主体部分 -->
+        <!-- tr -> 行 -->
+        <!-- td -> 单元格数据 -->
+        <tbody>
+            <tr>
+              <td>行1，列1</td>
+              <td>行1，列2</td>
+              <td>行1，列3</td>
+            </tr>
+            <tr>
+              <td>行2，列1</td>
+              <td>行2，列2</td>
+              <td>行2，列3</td>
+            </tr>
+        </tbody>        
+    </table>
+
+    <!-- 列表 -->
+    <h4>无序列表</h4>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        </ul>
+    <h4>有序列表</h4>
+    <ol>
+        <li>Coffee</li>
+         <li>Milk</li>
+    </ol>
+    <h4>自定义列表</h4>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>-.- white cold drink</dd>
+    </dl>
+
+    <!-- 区块 -->
+    <!-- div元素 -> 块级元素, 用于组合其他HTML元素, 与CSS一起使用 -->
+    <div id="container" style="width:500px">
+ 
+        <div id="header" style="background-color:#FFA500;">
+        <h1 style="margin-bottom:0;">主要的网页标题</h1></div>
+         
+        <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+        <b>菜单</b><br>
+        HTML<br>
+        CSS<br>
+        JavaScript</div>
+         
+        <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+        内容在这里</div>
+         
+        <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+        版权 © runoob.com</div>
+         
+        </div>
+    <!-- span元素 -> 内敛元素,用来组合文档中的行内元素 -->
+
+    <!-- 表单 -->
+    <!-- 创建表单 form:  action 定义了服务端的文件名-->
+    <form action="/" method="post">
+        <!-- 文本输入框 -->
+        <!-- label 添加标签,提高可访问性 -->
+        <label for="name">用户名:</label>
+        <!-- input 创建输入元素, required 不可为空-->
+        <input type="text" id="name" name="name" required>
+    
+        <br>
+    
+        <!-- 密码输入框 -->
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <br>
+    
+        <!-- 单选按钮 -->
+        <!-- name相同时,只能选择一个按钮 -->
+        <label>性别:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">男</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女</label>
+    
+        <br>
+    
+        <!-- 复选框 -->
+        <input type="checkbox" id="subscribe" name="subscribe" checked>
+        <label for="subscribe">订阅推送信息</label>
+    
+        <br>
+    
+        <!-- 下拉列表 -->
+        <label for="country">国家:</label>
+        <select id="country" name="country">
+            <option value="cn">CN</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+    
+        <br>
+    
+        <!-- 提交按钮 -->
+        <input type="submit" value="提交">
+    </form>
+
+    <!-- 框架 -->
+    <!-- <iframe src=""></iframe> -->
+    <iframe src="demo_iframe.html" width="100" height="50" name="iframe_a"></iframe>
+    <!-- <p><a href="https://www.runoob.com" target="iframe_a" rel="noopener">RUNOOB.COM</a></p> -->
+
+    <!-- 颜色 -->
+    <!-- 十六进制的符号, #000000 -> #FFFFFF -->
+    <!-- rgb(0,0,0) -> rgb(255,255,255)-->
+    <!-- 161个标准颜色名 -->
+
+    <!-- 脚本  -->
+    <!-- later -->
+
     
 
 </body>
